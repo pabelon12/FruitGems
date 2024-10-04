@@ -10,7 +10,10 @@ public class Tranpa_Puas : MonoBehaviour
         if (collision.transform.CompareTag("Player"))
         {
             Destroy(collision.gameObject);
-            SceneManager.LoadScene(0);
+           
+             int activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
+              SceneManager.LoadScene(activeSceneIndex);
+            
         }
     }
 }

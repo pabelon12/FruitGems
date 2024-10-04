@@ -29,7 +29,9 @@ public class TranpaF2 : MonoBehaviour
         if (collision.transform.CompareTag("Player"))
         {
             Destroy(collision.gameObject);
-            SceneManager.LoadScene(0);
+
+            int activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(activeSceneIndex);
         }
         if (collision.gameObject.layer == LayerMask.NameToLayer("Suelo"))
         {

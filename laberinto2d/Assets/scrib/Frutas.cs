@@ -10,10 +10,6 @@ public class Frutas : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().enabled = false;
             gameObject.transform.GetChild(0).gameObject.SetActive(true);
-
-            
-            FindObjectOfType<Legada>().Reecolecion();
-
             Destroy(gameObject, 0.5f);
         }
     }
