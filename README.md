@@ -1,1 +1,2 @@
 # FruitGems
+![MundoColres](./capturafruitgems.jpeg)
