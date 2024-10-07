@@ -6,6 +6,8 @@ public class Player : MonoBehaviour
 {
     public float Correr = 2 ;
     public float Velocidad_Salto = 3;
+    public float DobleSalto = 2.5f;
+    private bool SegundoSalto;
     public Rigidbody2D player;
     public bool SaltoMejorado = false;// alias betterJump
     public float Caida = 0.5f;//FALLMultiplier
@@ -21,8 +23,55 @@ public class Player : MonoBehaviour
         player = GetComponent<Rigidbody2D>();
     }
 
-   
-    void Update()
+    private void Update()
+    {
+        if (Input.GetKey("space") )
+        {
+            if (Pata.suelo)
+            {
+                SegundoSalto = true;
+                player.velocity = new Vector2(player.velocity.x, Velocidad_Salto);
+            }
+            else
+            {
+                if (Input.GetKeyDown("space"))
+                {
+                    if (SegundoSalto)
+                    {
+                        ani.SetBool("DobleSalto", true);
+                        player.velocity = new Vector2(player.velocity.x, DobleSalto);
+                        SegundoSalto = false;
+                    }
+
+                }
+            }
+        }
+
+
+
+        if (Pata.suelo == false)//condicion para saltar
+        {
+            ani.SetBool("Saltar", true);
+            ani.SetBool("Rum", false);
+        }
+        if (Pata.suelo == true)
+        {
+            ani.SetBool("Saltar", false);
+            ani.SetBool("Caer", false);
+            ani.SetBool("DobleSalto", false);
+        }
+         if (player.velocity.y<0)
+        {
+            ani.SetBool("Caer", true);
+        }
+        else if (player.velocity.y > 0)
+        {
+            ani.SetBool("Caer", false);
+        }
+    }
+
+
+    void FixedUpdate()
     {
         if (Input.GetKey("d") || Input.GetKey("right"))
         {
@@ -40,19 +89,6 @@ public class Player : MonoBehaviour
         {
             player.velocity = new Vector2(0, player.velocity.y);
             ani.SetBool("Rum", false);
-        }
-        if (Input.GetKey("space") && Pata.suelo)
-        {
-            player.velocity = new Vector2(player.velocity.x,Velocidad_Salto);
-        }
-        if (Pata.suelo==false)//condicion para saltar
-        {
-            ani.SetBool("Saltar", true);
-            ani.SetBool("Rum", false);
-        }
-        if(Pata.suelo == true)
-            {
-            ani.SetBool("Saltar", false);
         }
 
         if (SaltoMejorado)

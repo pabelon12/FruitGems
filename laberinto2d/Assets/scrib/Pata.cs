@@ -8,11 +8,18 @@ public class Pata : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        suelo = true;
+        if (collision.CompareTag("Suelazo"))
+        {
+            suelo = true;
+        }
+        
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        suelo = false;
+        if (collision.CompareTag("Suelazo"))
+        {
+            suelo = false;
+        }
     }
 
 }
