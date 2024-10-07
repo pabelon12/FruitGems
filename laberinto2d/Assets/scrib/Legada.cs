@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class Legada : MonoBehaviour
 {
 
+    public GameObject transicion;
+
     private void Update()
     {
         Reecolecion();
@@ -17,7 +19,7 @@ public class Legada : MonoBehaviour
     {
         if (transform.childCount==0)
         {
-            Debug.Log("Victoria");
+            transicion.SetActive(true);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     

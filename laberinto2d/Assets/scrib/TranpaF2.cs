@@ -28,7 +28,7 @@ public class TranpaF2 : MonoBehaviour
     {
         if (collision.transform.CompareTag("Player"))
         {
-            Destroy(collision.gameObject);
+            collision.transform.GetComponent<Player>().AcionMuerto();
 
             int activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
             SceneManager.LoadScene(activeSceneIndex);

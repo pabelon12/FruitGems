@@ -72,12 +72,14 @@ public class Player : MonoBehaviour
 
         }
 
-        
-
 
 
 
     }
 
-   
+
+    public void AcionMuerto()
+    {
+        ani.Play("Hurt");
+    }
 }

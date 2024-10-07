@@ -5,15 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class Tranpa_Puas : MonoBehaviour
 {
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.transform.CompareTag("Player"))
         {
-            Destroy(collision.gameObject);
+            collision.transform.GetComponent<Player>().AcionMuerto();
+           
            
              int activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
               SceneManager.LoadScene(activeSceneIndex);
             
         }
     }
+
+   
 }
