@@ -14,7 +14,6 @@ public class Player : MonoBehaviour
     public float MultiplicarSalto = 1f;//alias lowJumpMulipler
     public SpriteRenderer spriteRenderer;
     public Animator ani;
-    public TMPro.TextMeshProUGUI contador;
   
 
 
@@ -68,6 +67,8 @@ public class Player : MonoBehaviour
         {
             ani.SetBool("Caer", false);
         }
+
+
     }
 
 

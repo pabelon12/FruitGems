@@ -45,3 +45,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Fondo
+    uniqueID: 3160307473
+    locked: 0
+  - name: PISO
+    uniqueID: 2160258123
+    locked: 0
+  - name: player
+    uniqueID: 3479853591
+    locked: 0
