@@ -32,7 +32,7 @@ public class Patrullaje : MonoBehaviour
 
     private void Girar() 
     {
-        if (transform.position.x < PuntoMover[SiguientePaso].position.x)
+        if (transform.position.x > PuntoMover[SiguientePaso].position.x)
         {
             sprite.flipX = true;
         }

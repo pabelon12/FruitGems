@@ -12222,6 +12222,22 @@ PrefabInstance:
       propertyPath: velocidadMoviento
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4601699487446542329, guid: a9017121cb526464bbfb11a416a7ffcf, type: 3}
+      propertyPath: m_Size.x
+      value: 0.222617
+      objectReference: {fileID: 0}
+    - target: {fileID: 4601699487446542329, guid: a9017121cb526464bbfb11a416a7ffcf, type: 3}
+      propertyPath: m_Size.y
+      value: 0.20034245
+      objectReference: {fileID: 0}
+    - target: {fileID: 4601699487446542329, guid: a9017121cb526464bbfb11a416a7ffcf, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.002711773
+      objectReference: {fileID: 0}
+    - target: {fileID: 4601699487446542329, guid: a9017121cb526464bbfb11a416a7ffcf, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.029828772
+      objectReference: {fileID: 0}
     - target: {fileID: 4601699487446542330, guid: a9017121cb526464bbfb11a416a7ffcf, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -21107,7 +21123,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1779535960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.82808447, y: -3.1560242, z: -10}
+  m_LocalPosition: {x: 0.7807355, y: -3.155921, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

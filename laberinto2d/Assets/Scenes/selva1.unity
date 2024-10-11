@@ -1786,6 +1786,18 @@ PrefabInstance:
       value: face-block (7)
       objectReference: {fileID: 0}
     - target: {fileID: 7290060690732727741, guid: 3009267de65eb5841ade5ea928c30797, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7290060690732727741, guid: 3009267de65eb5841ade5ea928c30797, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7290060690732727741, guid: 3009267de65eb5841ade5ea928c30797, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7290060690732727741, guid: 3009267de65eb5841ade5ea928c30797, type: 3}
       propertyPath: m_SortingLayer
       value: 2
       objectReference: {fileID: 0}
@@ -1793,6 +1805,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -2134709173
       objectReference: {fileID: 0}
+    - target: {fileID: 7290060690732727741, guid: 3009267de65eb5841ade5ea928c30797, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3009267de65eb5841ade5ea928c30797, type: 3}
 --- !u!1001 &239842811
@@ -10647,7 +10663,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1381487376}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6671114, y: -0.0873127, z: -10}
+  m_LocalPosition: {x: -1.7996864, y: -0.08755112, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
