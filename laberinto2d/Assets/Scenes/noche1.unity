@@ -1924,11 +1924,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4591297911100255172, guid: ef97233f6f3b62c4f9d821313d00366f, type: 3}
       propertyPath: m_Size.x
-      value: 0.119309306
+      value: 0.039876223
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591297911100255172, guid: ef97233f6f3b62c4f9d821313d00366f, type: 3}
+      propertyPath: m_Size.y
+      value: 0.0009930702
       objectReference: {fileID: 0}
     - target: {fileID: 4591297911100255172, guid: ef97233f6f3b62c4f9d821313d00366f, type: 3}
       propertyPath: m_Offset.x
-      value: -0.018820226
+      value: -0.018820167
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591297911100255172, guid: ef97233f6f3b62c4f9d821313d00366f, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0043428824
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef97233f6f3b62c4f9d821313d00366f, type: 3}
@@ -49205,6 +49213,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Esenario '
       objectReference: {fileID: 0}
+    - target: {fileID: 4453009761345138462, guid: 0baeaa3c927e7b84591701ce02fd0312, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0baeaa3c927e7b84591701ce02fd0312, type: 3}
 --- !u!1001 &501734923
@@ -59106,7 +59118,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1779535960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.7807355, y: -3.155921, z: -10}
+  m_LocalPosition: {x: 0.7806821, y: -3.155921, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

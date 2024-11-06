@@ -172,7 +172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Correr: 4
   Velocidad_Salto: 4.5
-  DobleSalto: 6.1
+  DobleSalto: 6.5
   player: {fileID: 4591297911053402848}
   SaltoMejorado: 0
   Caida: 0.5
@@ -250,7 +250,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.018877923, y: 0.0006149579}
+  m_Offset: {x: -0.018923938, y: 0.0043399916}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -261,7 +261,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.11977565, y: 0.008448919}
+  m_Size: {x: 0.04021585, y: 0.0009988518}
   m_EdgeRadius: 0
 --- !u!114 &4591297911100255173
 MonoBehaviour:
